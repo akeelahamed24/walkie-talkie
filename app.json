@@ -1,0 +1,41 @@
+{
+  "expo": {
+    "name": "Walkie Talkie",
+    "slug": "walkie-talkie",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#111827"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.example.walkietalkie",
+      "infoPlist": {
+        "NSBluetoothAlwaysUsageDescription": "Bluetooth is used for peer-to-peer walkie-talkie communication.",
+        "NSMicrophoneUsageDescription": "Microphone access is required for push-to-talk audio transmission."
+      }
+    },
+    "android": {
+      "package": "com.example.walkietalkie",
+      "permissions": [
+        "BLUETOOTH",
+        "BLUETOOTH_ADMIN",
+        "BLUETOOTH_CONNECT",
+        "BLUETOOTH_SCAN",
+        "RECORD_AUDIO",
+        "FOREGROUND_SERVICE",
+        "WAKE_LOCK"
+      ]
+    },
+    "plugins": [
+      "react-native-background-actions"
+    ]
+  }
+}
